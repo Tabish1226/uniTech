@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-icons-1.7.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-bg">
+        <div class="container">
+            <div>
+                <a class="navbar-brand disabled">Muhammad Ali - Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid custom-color">
+        <div class="row">
+            <div class="col-2 justify-content-center">
+                <div class="card border-0 border-bottom w-100">
+                    <i class="bi bi-person-circle mx-auto fs-1"></i>
+                    <div class="card-body d-none d-lg-block">
+                        <h5 class="card-title text-nowrap">Muhammad Ali</h5>
+                        <p class="card-text text-nowrap">Ali@Gmail.com</p>
+                    </div>
+                </div>
+                <ul class="list-unstyled text-center text-lg-start">
+                    <li class="p-2 border-bottom mx-auto custom-active"><a href="#" class="text-decoration-none fs-6"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Dashboard</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="deposit.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Deposit</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="wallet.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Wallet</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="transactions.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Transactions</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="network.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Network</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="profile.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Profile</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="settings.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Settings</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="packages.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Packages</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="../index.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Logout</span></a></li>
+                </ul>
+            </div>
+            <div class="col-10">
+                <h1 class="fw-light text-center mt-4">Dashboard</h1>
+                <div class="row mt-5">
+                    <div class="card h-100">
+                        <div class="card-header bg-white">
+                            <h5 class="card-title">Cashbox</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <p>Investment: $0.00</p>
+                                    <p>Profit: $0.00</p>
+                                </div>
+                                <div class="col-4">
+                                    <p>Package: Basic-II</p>
+                                    <p>Earning: 6% month</p>
+                                </div>
+                                <div class="col-4">
+                                    <p>Direct Referrals: 4</p>
+                                    <p>Indirect Referrals: 8</p>
+                                </div>
+                            </div>
+                            <form class="form">
+                                <div class="row">
+                                    <div class="col-9">
+                                        <input class="form-control m-0 w-100" type="text" name="ref" id="ref" value="https://www.universaltechnetwork.com/utn_0000480">
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn custom-bg m-0 w-100">Copy Link</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <table class="table custom-color">
+                    <h1 class="fw-light mt-5 text-center">Recent Transactions</h1>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Sender</th>
+                            <th scope="col">Receiver</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Jacob</td>
+                            <td>Cashbox</td>
+                            <td>$9.6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Company</td>
+                            <td>Deposit</td>
+                            <td>$10.5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Company</td>
+                            <td>Jacob</td>
+                            <td>Withdraw</td>
+                            <td>25.5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
