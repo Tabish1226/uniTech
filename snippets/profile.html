@@ -55,22 +55,37 @@
                             <input type="text" class="form-control custom-color" id="email" value="Ali@email.com" name="email" disabled>
                             <label for="email">Email</label>
                         </div>
-                        <!-- <div class="form-floating mb-2">
-                            <input type="text" class="form-control" id="pwd" placeholder="Password" name="pswd">
-                            <label for="pwd">Password</label>
-                        </div> -->
                         <div class="form-floating mb-2">
-                            <input type="text" class="form-control" id="pwd" placeholder="Mobile" name="pswd">
+                            <input type="tel" class="form-control" id="pwd" placeholder="Mobile" name="tel">
                             <label for="pwd">Mobile Number</label>
                         </div>
-                        <!-- <div class="form-floating mb-2">
-                            <input type="text" class="form-control" id="pwd" placeholder="Investment" name="pswd">
-                            <label for="pwd">Investment</label>
-                        </div> -->
-                        <!-- <div class="form-floating mb-2">
-                            <input type="text" class="form-control" id="pwd" placeholder="Referrer ID" name="pswd">
-                            <label for="pwd">Referrer ID</label>
-                        </div> -->
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="form-floating col-6">
+                                <input type="text" class="form-control" id="pwd" placeholder="Country" name="country" value="Pakistan">
+                                <label for="pwd">Country</label>
+                            </div>
+                            <div class="form-floating col-5">
+                                <input type="text" class="form-control" id="pwd" placeholder="City" name="city" value="Karachi">
+                                <label for="pwd">City</label>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-2">
+                            <input type="date" class="form-control" id="pwd" name="pswd" >
+                            <label for="pwd">Joined On</label>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <a class="btn custom-bg" href="dashboard.html">Update Profile</a>
+                            </div>
+                            <div>
+                                <a class="btn btn-dark" href="javascript:void(0)">Cancel</a>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <form class="mx-auto w-100" id="update-wallet">
+                    <fieldset class="border p-3">
+                        <legend class="float-none w-auto p-1 custom-color">Update Wallet</legend>
                         <div class="form-floating mb-2">
                             <input type="text" class="form-control" id="pwd" placeholder="USDT Wallet Address" name="pswd">
                             <label for="pwd">USDT Wallet Address</label>
@@ -79,13 +94,9 @@
                             <input type="text" class="form-control" id="pwd" placeholder="Perfect Money Wallet Address" name="pswd">
                             <label for="pwd">Perfect Money Wallet Address</label>
                         </div>
-                        <div class="form-floating mb-2">
-                            <input type="date" class="form-control" id="pwd" value="12/27/2022" name="pswd">
-                            <label for="pwd">Joined On</label>
-                        </div>
                         <div class="d-flex justify-content-between">
                             <div>
-                                <a class="btn custom-bg" href="dashboard.html">Update Details</a>
+                                <a class="btn custom-bg" href="#">Update Wallet</a>
                             </div>
                             <div>
                                 <a class="btn btn-dark" href="javascript:void(0)">Cancel</a>
