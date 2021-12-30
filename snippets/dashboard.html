@@ -12,10 +12,11 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark custom-bg">
+    <nav class="navbar navbar-expand-lg custom-bg">
         <div class="container">
-            <div>
-                <a class="navbar-brand disabled">Muhammad Ali - Dashboard</a>
+            <div class="">
+                <h2 class="m-0">Muhammad Ali - Dashboard</h2>
+                <p>USER-ID: utn_00001</p>
             </div>
         </div>
     </nav>
@@ -31,28 +32,54 @@
                     </div>
                 </div>
                 <ul class="list-unstyled text-center text-lg-start">
-                    <li class="p-2 border-bottom mx-auto custom-active"><a href="#" class="text-decoration-none fs-6"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Dashboard</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="deposit.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Deposit</span></a></li>
+                    <li class="p-2 border-bottom mx-auto custom-active"><a href="dashboard.html" class="text-decoration-none fs-6"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Dashboard</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="profile.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Profile</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="packages.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Packages</span></a></li>
                     <li class="p-2 border-bottom mx-auto"><a href="wallet.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Wallet</span></a></li>
                     <li class="p-2 border-bottom mx-auto"><a href="transactions.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Transactions</span></a></li>
                     <li class="p-2 border-bottom mx-auto"><a href="network.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Network</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="profile.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Profile</span></a></li>
                     <li class="p-2 border-bottom mx-auto"><a href="settings.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Settings</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="packages.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Packages</span></a></li>
                     <li class="p-2 border-bottom mx-auto"><a href="support.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Support</span></a></li>
                     <li class="p-2 border-bottom mx-auto"><a href="../index.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Logout</span></a></li>
                 </ul>
             </div>
             <div class="col-10">
                 <h1 class="fw-light text-center mt-4">Dashboard</h1>
-                <div class="row mt-5">
-                    <div class="card h-100">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="d-flex align-items-baseline">
+                            <h4>Legendary Stars:</h4>
+                            <p class="ms-2 fs-2" style="color:rgb(185, 148, 24);">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </p>
+                        </div>
+                        <!-- <div class="d-flex">
+                            <h4>Legendary Stars:</h4>
+                            <p class="ms-2 fs-4"> 
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </p>
+                        </div> -->
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+                <div class="row">
+                    <div class="card mb-3 h-100">
                         <div class="card-header d-flex justify-content-between bg-white">
                             <div>
                                 <h5 class="align-text-bottom p-2">Cashbox</h5>
                             </div>
                             <div class="mt-2">
-                                <a href="kyc.html" class="custom-bg rounded-pill p-2 text-decoration-none">Unverified</a>
+                                <a href="kyc.html" class="custom-bg rounded-pill p-2 text-decoration-none">KYC - Unverified</a>
                             </div>
                         </div>
                         <div class="card-body">
@@ -63,11 +90,7 @@
                                 </div>
                                 <div class="col-4">
                                     <p>Package: Basic-II ($100.0)</p>
-                                    <p>Earning: 6% month</p>
-                                </div>
-                                <div class="col-4">
-                                    <p>Direct Referrals: 4</p>
-                                    <p>Indirect Referrals: 8</p>
+                                    <p>Earnings To-Date: $100.0</p>
                                 </div>
                             </div>
                             <form class="form">
@@ -83,8 +106,46 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card h-100 mb-3">
+                            <div class="card-header d-flex justify-content-between bg-white">
+                                <div>
+                                    <h5 class="align-text-bottom p-2">Bonuses</h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p>Direct Team Bonus: $100.0</p>
+                                        <p>Indirect Team Bonus: $500.00</p>
+                                        <p>Generation Bonus: $25.5</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card h-100 mb-3">
+                            <div class="card-header d-flex justify-content-between bg-white">
+                                <div>
+                                    <h5 class="align-text-bottom p-2">My Team</h5>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p>Direct Team: 4</p>
+                                        <p>Indirect Team: 10</p>
+                                        <p>Reward Achieved: iPhone</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <table class="table custom-color">
-                    <h1 class="fw-light mt-5 text-center">Recent Transactions</h1>
+                    <h1 class="fw-light text-center">Recent Transactions</h1>
                     <thead>
                         <tr>
                             <th scope="col">#</th>

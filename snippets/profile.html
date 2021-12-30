@@ -31,16 +31,15 @@
                     </div>
                 </div>
                 <ul class="list-unstyled text-center text-lg-start">
-                    <li class="p-2 border-bottom mx-auto"><a href="dashboard.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> Dashboard</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="deposit.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Deposit</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="wallet.html" class="text-decoration-none fs-6 custom-color "><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> My Wallet</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="transactions.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> My Transactions</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="packages.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> Packages</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="network.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> My Network</span></a></li>
-                    <li class="p-2 border-bottom mx-auto custom-active"><a href="profile.html" class="text-decoration-none fs-6"><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> Profile</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="settings.html" class="text-decoration-none fs-6 custom-color "><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> Settings</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="dashboard.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Dashboard</span></a></li>
+                    <li class="p-2 border-bottom mx-auto custom-active"><a href="profile.html" class="text-decoration-none fs-6"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Profile</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="packages.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Packages</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="wallet.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Wallet</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="transactions.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Transactions</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="network.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Network</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="settings.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Settings</span></a></li>
                     <li class="p-2 border-bottom mx-auto"><a href="support.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Support</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="../index.html" class="text-decoration-none fs-6 custom-color "><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> Logout</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="../index.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Logout</span></a></li>
                 </ul>
             </div>
             <div class="col-10 ">
@@ -70,7 +69,7 @@
                             </div>
                         </div>
                         <div class="form-floating mb-2">
-                            <input type="date" class="form-control" id="pwd" name="pswd" >
+                            <input type="date" class="form-control" id="pwd" name="pswd">
                             <label for="pwd">Joined On</label>
                         </div>
                         <div class="d-flex justify-content-between">
@@ -85,14 +84,26 @@
                 </form>
                 <form class="mx-auto w-100" id="update-wallet">
                     <fieldset class="border p-3">
-                        <legend class="float-none w-auto p-1 custom-color">Update Wallet</legend>
-                        <div class="form-floating mb-2">
-                            <input type="text" class="form-control" id="pwd" placeholder="USDT Wallet Address" name="pswd">
+                        <legend class="float-none w-auto p-1 custom-color">Your Wallet</legend>
+                        <div class="form-floating mb-2 d-flex">
+                            <input type="text" class="form-control" id="pwd" placeholder="USDT Wallet Address" value="5464ad5s4qweqwesd" name="pswd">
                             <label for="pwd">USDT Wallet Address</label>
                         </div>
                         <div class="form-floating mb-2">
-                            <input type="text" class="form-control" id="pwd" placeholder="Perfect Money Wallet Address" name="pswd">
+                            <input type="text" class="form-control" id="pwd" placeholder="Perfect Money Wallet Address" value="5464ad5s4qweqwesd" name="pswd" disabled>
                             <label for="pwd">Perfect Money Wallet Address</label>
+                        </div>
+                        <div class="d-flex justify-content-start">
+                            <div class="m-2">
+                                <input type="radio" name="payment-method" id="method-usdt" checked>
+                                <label for="method-usdt">USDT</label>
+
+                            </div>
+                            <div class="m-2">
+                                <input type="radio" name="payment-method" id="method-pmoney">
+                                <label for="method-pmoney">Perfect Money</label>
+
+                            </div>
                         </div>
                         <div class="d-flex justify-content-between">
                             <div>

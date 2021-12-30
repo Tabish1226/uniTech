@@ -31,20 +31,19 @@
                     </div>
                 </div>
                 <ul class="list-unstyled text-center text-lg-start">
-                    <li class="p-2 border-bottom mx-auto"><a href="dashboard.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> Dashboard</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="deposit.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Deposit</span></a></li>
-                    <li class="p-2 border-bottom mx-auto custom-active"><a href="wallet.html" class="text-decoration-none fs-6"><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> My Wallet</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="transactions.html" class="text-decoration-none fs-6 custom-color "><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> My Transactions</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="packages.html" class="text-decoration-none fs-6 custom-color "><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> Packages</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="network.html" class="text-decoration-none fs-6 custom-color "><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> My Network</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="profile.html" class="text-decoration-none fs-6 custom-color "><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> Profile</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="settings.html" class="text-decoration-none fs-6 custom-color "><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> Settings</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="dashboard.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Dashboard</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="profile.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Profile</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="packages.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Packages</span></a></li>
+                    <li class="p-2 border-bottom mx-auto custom-active"><a href="wallet.html" class="text-decoration-none fs-6"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Wallet</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="transactions.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Transactions</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="network.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> My Network</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="settings.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Settings</span></a></li>
                     <li class="p-2 border-bottom mx-auto"><a href="support.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Support</span></a></li>
-                    <li class="p-2 border-bottom mx-auto"><a href="../index.html" class="text-decoration-none fs-6 custom-color "><i class="bi bi-house "></i><span class="d-none d-md-none d-lg-inline "> Logout</span></a></li>
+                    <li class="p-2 border-bottom mx-auto"><a href="../index.html" class="text-decoration-none fs-6 custom-color"><i class="bi bi-house"></i><span class="d-none d-md-none d-lg-inline"> Logout</span></a></li>
                 </ul>
             </div>
             <div class="col-10">
-                <h1 class="fw-light text-center mt-5 mb-2">Wallets</h1>
+                <h1 class="fw-light text-center mt-3 mb-2">Wallets</h1>
                 <hr>
                 <div class="w-100">
                     <div class="row justify-content-center">
@@ -54,19 +53,47 @@
                                     <h5 class="card-title">Cashbox</h5>
                                 </div>
                                 <div class="card-body">
-                                    <p class="card-text">Available: $0.00</p>
-                                    <p class="card-text">Transferrable: $0.00</p>
+                                    <p class="card-text">Amount: $0.00</p>
                                 </div>
                                 <div class="card-footer bg-white justify-content-center">
                                     <button type="button" class="btn custom-bg" data-bs-toggle="modal" data-bs-target="#transfer">Transfer</button>
+                                    <button type="button" class="btn custom-bg" data-bs-toggle="modal" data-bs-target="#deposit">Deposit</button>
                                     <button type="button" class="btn custom-bg" data-bs-toggle="modal" data-bs-target="#withdraw">Withdraw</button>
+                                    <button type="button" class="btn custom-bg" data-bs-toggle="modal" data-bs-target="#capitalWithdraw-form">Withdraw - CAPITAL</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <h5>Capital Refund Procedure</h5>
+                        <p>
+                            Your capital with UTN is safe and secure and you can withdraw it any time according to the following rule.
+                        </p>
+                        <ul>
+                            <li>Within 3 to 6 months of package activation 40% deduction.</li>
+                            <li>Within 6 to 12 months of package activation 25% deduction.</li>
+                            <li>After 12 months of package activation 0% deduction.</li>
+                        </ul>
+                        <p>No service charges will be applied on capital withdraw.</p>
+                    </div>
+                    <div class="col-6">
+                        <h5>Deposits and Withdrawals</h5>
+                        <p>You can make Deposits & Withdrawals through Internal transfers, Perfect Money, USDT and Bank wire.</p>
+                        <ul>
+                            <li>Service charges for internal transfer 2% (within a second)</li>
+                            <li>Service charges for Perfect Money 6% (24 hours)</li>
+                            <li>Service charges for USDT 8% (48 hours)</li>
+                            <li>Service charges for bank transfer 10% (5 working days)</li>
+                        </ul>
+                    </div>
+                    <p class="fw-bold">On 30th of every month (including weekends) your monthly ROI will be transferred to your cashbox and on 1st of every month you will be able to cash out your amount through your desired international wallet or local banks. Internal
+                        transfers can be done anytime 24/7 around the clock.</p>
+                </div>
             </div>
         </div>
+
         <!-- Transfer Modal -->
         <div class="modal fade" id="transfer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="transferLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -77,10 +104,6 @@
                     </div>
                     <div class="modal-body">
                         <form class="row g-3">
-                            <div class="d-flex justify-content-between">
-                                <p>Available Amount:</p>
-                                <small>$85.5</small>
-                            </div>
                             <div class="col-6">
                                 <div class="input-group input-group-sm mb-3">
                                     <span class="input-group-text" id="inputGroup-sizing-sm">From</span>
@@ -116,6 +139,69 @@
             </div>
         </div>
         <!-- Transfer Modal End -->
+        <!-- Deposit Modal Starts-->
+        <div class="modal fade" id="deposit" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="depositLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="depositLabel">Deposit</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-6">
+                                <div class="card h-100">
+                                    <div class="card-header bg-white">
+                                        <p class="card-title text-center">USDT Wallet</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <img src="/images/qr.jpg" width="100%" />
+                                        <!-- <small class="text-muted mt-3">Scan QR Code in your wallet app to deposit.</small><br> -->
+                                        <small>Wallet: jkhjJkhUHIHwn</small><br>
+                                    </div>
+                                    <div class="card-footer">
+                                        <label for="formFileSm" class="form-label text-muted">Upload proof</label>
+                                        <input class="form-control form-control-sm" id="formFileSm" type="file">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card h-100">
+                                    <div class="card-header bg-white">
+                                        <p class="card-title text-center">Perfect Money</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="mt-5 mb-3">
+                                                <input type="email" name="email" id="email" class="form-control" placeholder="Company@email.com" disabled>
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="text" name="amount" id="amount" class="form-control" placeholder="Amount" required>
+
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="card-footer">
+                                        <label for="formFileSm" class="form-label text-muted">Upload proof</label>
+                                        <input class="form-control form-control-sm" id="formFileSm" type="file" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="mt-2 mb-2">
+                            <input type="password" name="epin" id="epin" class="form-control" placeholder="E-PIN" required>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn border custom-color" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn custom-bg">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Depost Modal Ends -->
         <!-- Withdraw Modal Starts-->
         <div class="modal fade" id="withdraw" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="withdrawLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -125,10 +211,6 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="d-flex justify-content-between">
-                            <p>Available Amount:</p>
-                            <small>$85.5</small>
-                        </div>
                         <form class="row g-3">
                             <div class="col-6">
                                 <div class="card h-100">
@@ -136,6 +218,10 @@
                                         <p class="card-title text-center">USDT</p>
                                     </div>
                                     <div class="card-body">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Your USDT Wallet Address</label>
+                                            <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="kKJiojwqensa5d654aswq" disabled>
+                                        </div>
                                         <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Amount</label>
                                             <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Enter Amount">
@@ -150,6 +236,10 @@
                                     </div>
                                     <div class="card-body">
                                         <form>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">PMoney Email:</label>
+                                                <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="user@email.com" disabled>
+                                            </div>
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1" class="form-label">Amount</label>
                                                 <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Enter Amount">
@@ -170,6 +260,64 @@
             </div>
         </div>
         <!-- Withdraw Modal Ends -->
+        <!-- Withdraw-Capital-Form Modal Ends -->
+        <div class="modal fade" id="capitalWithdraw-form" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="capitalWithdraw-formLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="capitalWithdraw-formLabel">Withdraw</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3">
+                            <div class="col-6">
+                                <div class="card h-100">
+                                    <div class="card-header bg-white">
+                                        <p class="card-title text-center">USDT</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Your USDT Wallet Address</label>
+                                            <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="kKJiojwqensa5d654aswq" disabled>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Amount</label>
+                                            <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Enter Amount">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card h-100">
+                                    <div class="card-header bg-white">
+                                        <p class="card-title text-center">Perfect Money</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">PMoney Email:</label>
+                                                <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="user@email.com" disabled>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label">Amount</label>
+                                                <input type="text" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Enter Amount">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <input type="password" class="form-control form-control-sm mt-3" id="exampleFormControlInput1" placeholder="E-PIN">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn border custom-color" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn custom-bg">Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Withdraw-Capital-Form Modal Ends -->
         <script src="../js/script.js"></script>
         <script src="../js/jquery.js"></script>
         <script src="../js/bootstrap.bundle.min.js"></script>
